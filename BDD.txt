@@ -1,0 +1,17 @@
+Showrooms(int idshowroom,varchar adresse,varchar nomresponsable)
+Publicite(int idpublicite,varchar operateur,varchar libelle)
+
+Partenaires(int idpartenaire,varchar nom,varchar email,varchar lieu)
+Sponsors(int idsponsor,varchar nom,varchar email,varchar lieu)
+
+Client(int idclient,varchar nom,varchar prenom,varchar adresse)
+
+
+Produits(int id_produit ,varchar nom_produit ,varchar reference ,int quantite,int idca,float prix,img varchar(255),varchar description,varchar promotion)
+Catégories(int id,varchar nom, varchar(255) img)
+
+Reclamation(int idreclamation,varchar textreclamation,varchar sujet,boolean etat,int idclient)
+Q&R(int idquestion,int idreponse,varchar textreponse,int idclient)
+
+Commande(int id,date,int livraison,int client,int produit,status,int quantite,float prix)
+Livraison(int id,date,int client,status)
